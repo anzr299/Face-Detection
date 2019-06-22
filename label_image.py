@@ -85,22 +85,6 @@ while(True):
     for i in top_k:
       if(labels[i]=="faces" and results[i]>0.95 and prev==False):
         print(labels[i], results[i])
-        engine.say("hello")
-        engine.runAndWait()
-        engine.say("and")
-        engine.runAndWait()
-        engine.say("welcome")
-        engine.runAndWait()
-        engine.say("to")
-        engine.runAndWait()
-        engine.say("D")
-        engine.runAndWait()
-        engine.say("P")
-        engine.runAndWait()
-        engine.say("S")
-        engine.runAndWait()
-        engine.say("Sharjah")
-        engine.runAndWait()
         prev = True
       elif(labels[i]=="faces" and results[i]<0.95):
         prev=False
